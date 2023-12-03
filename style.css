@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 480px;
+  width: 480px;
+  border-radius: 50px;
+  color: white;
+  background-color: #686d6e20;
+  transition: 300ms;
+}
+
+h2 {
+  margin: 20px;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: -5px;
+}
+
+.point {
+  font-size: 5rem;
+  text-align: center;
+  margin: -20px;
+}
+
+.score-box {
+  background-color: rgba(2, 0, 36, 0.3);
+  width: 120px;
+  height: 96px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.btn1,
+.btn2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+}
+
+button {
+  height: 80px;
+  width: 160px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(2, 0, 36, 0.1);
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+button:hover {
+  background-color: rgba(2, 0, 36, 0.5);
+}
+
+button:active {
+  transform: translate(0, 5px);
+}
+
+img {
+  position: absolute;
+  height: 150px;
+}
+
+.restart {
+  position: absolute;
+  top: 50px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: rgba(2, 0, 36, 0.3);
+}
+
+.player-active {
+  background-color: #686d6e80;
+}
+
+.win-popup {
+  position: absolute;
+  background: linear-gradient(
+    135deg,
+    rgba(135, 148, 151, 0.9),
+    rgba(3, 69, 95, 0.9)
+  );
+  color: white;
+  height: 700px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 3;
+}
+
+.player-win {
+  font-size: 4rem;
+}
+
+.play-again {
+  width: 300px;
+  background-color: rgba(2, 0, 36, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(69, 69, 71, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.hidden {
+  display: none;
+}

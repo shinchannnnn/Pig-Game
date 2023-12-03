@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="player--0" class="container player-active">
+        <h2>Player 1</h2>
+        <p class="point point--0">0</p>
+        <div class="score-box">
+          <p class="score score--0">0</p>
+        </div>
+        <div class="btn1">
+          <button class="roll">Roll</button>
+          <button class="hold">Hold</button>
+        </div>
+      </section>
+      <section id="player--1" class="container">
+        <h2>Player 2</h2>
+        <p class="point point--1">0</p>
+        <div class="score-box">
+          <p class="score score--1">0</p>
+        </div>
+        <div class="btn2 hidden">
+          <button class="roll">Roll</button>
+          <button class="hold">Hold</button>
+        </div>
+      </section>
+      <img src="./assets/dice-1.png" alt="dice" class="dice hidden" />
+      <button class="restart">Restart</button>
+
+      <!-- winner dialog -->
+      <div class="win-popup hidden">
+        <h2 class="player-win">PLAYER 1 WIN</h2>
+        <button class="play-again">Play Again</button>
+      </div>
+    </main>
+    <div class="overlay hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
